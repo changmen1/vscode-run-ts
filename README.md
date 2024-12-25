@@ -46,3 +46,33 @@ console.log(data);
 > 设置>Extensions 找到```Run Code configuration```,勾上```Run In Terminal```选项,即可解决
 
 ![seeting](/assets/seeting.png)
+
+## 8.ts编译为js
+
+- 全局安装tsc
+
+```bash
+npm install -g typescript
+```
+
+- 也可以在项目中将tsc作为一个依赖模块安装
+
+- 安装之后就可以编译Typescript脚本了
+
+- tsc命令后面加上Typescript脚本文件，就可以编译成js脚本了
+
+```bash
+tsc lang1.ts
+```
+
+- tsc命令也可以一次编译多个 TypeScript 脚本
+
+```bash
+tsc lang1.ts lang2.ts lang3.ts
+```
+
+- 如果想将多个 TypeScript 脚本编译成一个 JavaScript 文件，可以使用--outFile参数
+
+```bash
+tsc lang1.ts lang2.ts lang3.ts --outFile lang.js
+```
